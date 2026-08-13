@@ -25,7 +25,7 @@ Web UI at `http://127.0.0.1:3080`.
 
 ## Usage
 
-1. Download `DSH-Web-UI-便携版.zip` from [Releases](../../releases) and extract it anywhere
+1. Download `dsh-web-ui-portable.zip` from [Releases](../../releases) and extract it anywhere
    (e.g. `D:\` or Desktop — **not** Program Files)
 2. Run `setup.bat` once — creates a desktop shortcut "DSH Web UI" with the icon
 3. Double-click **DSH Web UI** (or `dsh-web.bat`)

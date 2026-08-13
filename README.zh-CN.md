@@ -24,7 +24,7 @@
 
 ## 使用方法
 
-1. 从 [Releases](../../releases) 下载 `DSH-Web-UI-便携版.zip`，解压到任意位置
+1. 从 [Releases](../../releases) 下载 `dsh-web-ui-portable.zip`，解压到任意位置
    （如 `D:\` 或桌面 —— **不要放 Program Files**）
 2. 双击 `setup.bat` 一次 —— 桌面生成带图标的「DSH Web UI」快捷方式
 3. 双击 **DSH Web UI**（或 `dsh-web.bat`）
