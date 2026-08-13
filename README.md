@@ -49,9 +49,9 @@ Web UI at `http://127.0.0.1:3080`.
 
 ## Troubleshooting
 
-The zip contains `使用说明.txt` (Chinese) with the full FAQ: SmartScreen prompts, WeChat file corruption,
-folder-not-writable, port 3080 in use, slow first run, and more. If something fails, the window shows
-`[1/3] [2/3] [3/3]` stage markers and tells you exactly what to do — or open an issue with the window content.
+The zip contains `使用说明.txt` (Chinese) and `README-EN.txt` (English) with the full FAQ: SmartScreen prompts,
+WeChat file corruption, folder-not-writable, port 3080 in use, slow first run, and more. If something fails, the window
+shows `[1/3] [2/3] [3/3]` stage markers and tells you exactly what to do — or open an issue with the window content.
 
 ## License
 
