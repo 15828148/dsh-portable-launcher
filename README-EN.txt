@@ -9,8 +9,10 @@ DeepSeek Harness Web UI - Portable Launcher
 [How to use]
   Step 1: Double-click dsh-web.bat (or "DSH Web UI" on your desktop)
           - If Node.js is missing, you'll be asked to download a
-            portable Node.js (press Y; no admin required, it is
-            added to your user PATH automatically)
+            portable Node.js (press Y; no admin required)
+          - Everything is installed inside this folder (portable
+            mode): no system settings, no registry changes, no
+            leftover files - delete the folder to uninstall
           - If Node.js is already installed, this step is skipped
 
   Step 2: Put the whole folder anywhere (e.g. D:\ or Desktop) and run
@@ -31,10 +33,10 @@ DeepSeek Harness Web UI - Portable Launcher
   - Blue "Windows protected your PC" prompt when starting the .bat?
     Click "More info" -> "Run anyway". This is normal for files
     downloaded from the internet.
-  - Popups from security software (Huorong/360 etc.) about modifying
-    environment variables, npm network access, or installing software?
-    Click "Allow". Even if you click "Deny", it still works - the
-    launcher falls back to a local path automatically.
+  - Popups from security software (Huorong/360 etc.) about npm
+    network access or installing software? Click "Allow". This
+    launcher makes no registry changes and no system PATH changes,
+    so such popups are rare; either choice still works.
   - ZIP from WeChat won't open or fails to extract?
     Ask the sender to resend it using the desktop WeChat app
     (mobile WeChat occasionally corrupts files).

@@ -11,8 +11,8 @@ Web UI at `http://127.0.0.1:3080`.
 
 - **3 major stages with live progress**: `[1/3]` Node.js check → `[2/3]` dsh package check → `[3/3]` launch
 - **Zero-download fast path**: when everything is already installed, launch is direct — no downloads, no registry checks
-- **Automatic portable Node.js install** (no admin required; added to the user PATH)
-- **Automatic dsh install** via `npm install -g @deepseek-ai/dsh` (switches to the China npm mirror on retries)
+- **Automatic portable Node.js install** (no admin required; portable mode - no registry or system PATH changes, everything stays inside the package folder)
+- **Automatic dsh install** via a local `npm install --prefix` into the package folder (no global install, no system changes; China npm mirror fallback on retries)
 - **Up to 3 retries per step** with clear prompts, then concrete manual instructions
 - **Resume support**: close the window mid-setup, run again — it continues from where it stopped
 - Boot-time log (`dsh-startup.log`) written next to the launcher
@@ -35,8 +35,10 @@ Web UI at `http://127.0.0.1:3080`.
 ## How it works
 
 - Checks for Node.js v22+; if missing or too old, downloads the latest LTS `win-x64` portable build
-  from npmmirror (fallback: nodejs.org), extracts it next to the launcher, and adds it to the user PATH
-- Checks for the `dsh` package; if missing, runs `npm install -g @deepseek-ai/dsh`
+  from npmmirror (fallback: nodejs.org) and extracts it next to the launcher — portable mode, no
+  registry or system PATH changes, PATH is set for the session from a local marker file
+- Checks for the `dsh` package; if missing, runs `npm install --prefix "<folder>\dsh-local" @deepseek-ai/dsh`
+  (local install, no global changes)
 - Launches `dsh web`; a background helper polls `http://127.0.0.1:3080` and opens the browser when ready
 - Progress state lives in marker files next to the launcher (`node/`, `dsh-ready.txt`, `dsh-startup.log`),
   which is what makes resume and the zero-download fast path possible

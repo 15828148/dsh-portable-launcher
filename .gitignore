@@ -1,5 +1,6 @@
 # Runtime state created by the launcher - never commit these.
 node/
+dsh-local/
 dsh-ready.txt
 dsh-startup.log
 .zip-stage/
