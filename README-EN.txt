@@ -31,6 +31,10 @@ DeepSeek Harness Web UI - Portable Launcher
   - Blue "Windows protected your PC" prompt when starting the .bat?
     Click "More info" -> "Run anyway". This is normal for files
     downloaded from the internet.
+  - Popups from security software (Huorong/360 etc.) about modifying
+    environment variables, npm network access, or installing software?
+    Click "Allow". Even if you click "Deny", it still works - the
+    launcher falls back to a local path automatically.
   - ZIP from WeChat won't open or fails to extract?
     Ask the sender to resend it using the desktop WeChat app
     (mobile WeChat occasionally corrupts files).
